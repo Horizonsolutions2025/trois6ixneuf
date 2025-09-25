@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Studio Session | Trois Six Neuf</title>
+    <meta
+      name="description"
+      content="Reserve your space at Trois Six Neuf with real-time availability and modular packages."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="brand">Trois Six Neuf</a>
+        <nav aria-label="Primary">
+          <ul id="primary-menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="studio-spaces.html">Studio Spaces</a></li>
+            <li><a href="creative-services.html">Creative Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="book-now.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary" href="book-now.html">Book a Session</a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 60vh;">
+        <div
+          class="hero-visual"
+          style="background-image: url('https://images.unsplash.com/photo-1516637090014-cb1ab0d08fc7?auto=format&fit=crop&w=1500&q=80');"
+          aria-hidden="true"
+        ></div>
+        <div class="hero-content" data-animate>
+          <div class="badge">Book your session</div>
+          <h1>Live availability &amp; concierge coordination</h1>
+          <p>
+            Lock in your preferred studio slot via Setmore. Our production team will confirm details, equipment, and any crew support you need within hours.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://troissixneufstudio.setmore.com" target="_blank" rel="noreferrer">Launch booking portal</a>
+            <a class="btn btn-outline" href="#faq">Review policies</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-animate>
+        <div class="container">
+          <h2 class="section-title">Real-time scheduling</h2>
+          <p class="muted" style="max-width: 40rem;">
+            Use the embedded calendar for instant reservations, or open the Setmore portal in a new window for a full-screen experience.
+          </p>
+          <div style="margin-top: 2rem; border-radius: 1.2rem; overflow: hidden; border: 1px solid rgba(209, 188, 128, 0.2);">
+            <iframe
+              src="https://troissixneufstudio.setmore.com"
+              title="Trois Six Neuf Booking"
+              style="width: 100%; min-height: 720px; background-color: #0f0f0f;"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="faq" data-animate>
+        <div class="container">
+          <h2 class="section-title">Booking essentials</h2>
+          <div class="faq">
+            <div class="faq-item">
+              <h3>What should we bring?</h3>
+              <p class="muted">Bring your creative team, talent, and any custom props. Let us know if you need additional gear and we will prepare it ahead of arrival.</p>
+            </div>
+            <div class="faq-item">
+              <h3>How much setup time is included?</h3>
+              <p class="muted">Each booking includes a 60-minute setup buffer and a 30-minute wrap window. Additional setup can be arranged upon request.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Is support staff available?</h3>
+              <p class="muted">Absolutely. Request studio managers, camera operators, gaffers, or culinary stylists when you confirm the session and we’ll align the crew.</p>
+            </div>
+            <div class="faq-item">
+              <h3>What is the booking policy?</h3>
+              <p class="muted">A 50% deposit is required to secure the slot. Reschedules are accepted with 72 hours’ notice. Full policy details are shared upon confirmation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">Trois Six Neuf</div>
+          <p class="muted">Casablanca's high-end creative and production boutique studio.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p class="muted">36 Rue de la Réunion, Casablanca</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="studio-spaces.html">Studio Spaces</a>
+            <a href="creative-services.html">Services</a>
+            <a href="book-now.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/trois.six.neuf" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="mailto:trois6neuf.studio@gmail.com">Email</a>
+          </div>
+          <a href="book-now.html" class="muted" style="display: inline-block; margin-top: 0.8rem;">Booking Policy</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Trois Six Neuf Studio.</span>
+        <span>Crafted for creators in Casablanca.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What should we bring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bring your creative team, talent, and any custom props. Let us know if you need additional gear and we will prepare it ahead of arrival."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much setup time is included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Each booking includes a 60-minute setup buffer and a 30-minute wrap window. Additional setup can be arranged upon request."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is support staff available?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Request studio managers, camera operators, gaffers, or culinary stylists when you confirm the session and we’ll align the crew."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the booking policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 50% deposit is required to secure the slot. Reschedules are accepted with 72 hours’ notice. Full policy details are shared upon confirmation."
+            }
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
