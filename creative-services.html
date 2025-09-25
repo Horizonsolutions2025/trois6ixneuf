@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual &amp; Audio Content Services | Trois Six Neuf</title>
+    <meta
+      name="description"
+      content="From visual identity to set design — everything you need to create content that resonates."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="brand">Trois Six Neuf</a>
+        <nav aria-label="Primary">
+          <ul id="primary-menu" class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="studio-spaces.html">Studio Spaces</a></li>
+            <li><a class="active" href="creative-services.html">Creative Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="book-now.html">Book Now</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a class="btn btn-primary" href="book-now.html">Book a Session</a>
+        <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" style="min-height: 70vh;">
+        <div
+          class="hero-visual"
+          style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1500&q=80');"
+          aria-hidden="true"
+        ></div>
+        <div class="hero-content" data-animate>
+          <div class="badge">Creative direction &amp; production</div>
+          <h1>Services that accelerate your storytelling</h1>
+          <p>
+            Our in-house creatives collaborate with your team to shape narratives, craft visuals, and deliver experiences that resonate from first frame to final mix.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#services">Explore services</a>
+            <a class="btn btn-outline" href="book-now.html">Book a consultation</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section" data-animate>
+        <div class="container">
+          <h2 class="section-title">Full-stack creative support</h2>
+          <div class="service-list">
+            <div class="service-card">
+              <div class="icon-circle"><span>✺</span></div>
+              <h3>Content creation support</h3>
+              <p class="muted">Producers, directors, and crew that plug into your project to execute hero campaigns or rapid sprints.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-circle"><span>⌘</span></div>
+              <h3>Visual identity design</h3>
+              <p class="muted">Brand systems, motion packs, and broadcast toolkits tailored for digital-first storytelling.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-circle"><span>◍</span></div>
+              <h3>Audio post-production</h3>
+              <p class="muted">Mixing, mastering, and sound design suites for podcasts, commercials, and immersive experiences.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-circle"><span>▭</span></div>
+              <h3>Set design &amp; styling</h3>
+              <p class="muted">Spatial design, prop sourcing, and art direction to translate concept into tactile environments.</p>
+            </div>
+            <div class="service-card">
+              <div class="icon-circle"><span>⚡</span></div>
+              <h3>Production add-ons</h3>
+              <p class="muted">Camera and lens rental, certified operators, gaffers, and lighting crew ready to deploy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" data-animate>
+        <div class="container card">
+          <h2 class="section-title">Designed for collaboration</h2>
+          <p class="muted" style="max-width: 40rem;">
+            Whether you’re launching a product, reimagining a brand, or elevating a recurring show, we co-create the creative strategy and handle the technical execution.
+          </p>
+          <a class="btn btn-primary" href="book-now.html">Book a consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">Trois Six Neuf</div>
+          <p class="muted">Casablanca's high-end creative and production boutique studio.</p>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p class="muted">36 Rue de la Réunion, Casablanca</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="studio-spaces.html">Studio Spaces</a>
+            <a href="creative-services.html">Services</a>
+            <a href="book-now.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/trois.six.neuf" target="_blank" rel="noreferrer">Instagram</a>
+            <a href="mailto:trois6neuf.studio@gmail.com">Email</a>
+          </div>
+          <a href="book-now.html" class="muted" style="display: inline-block; margin-top: 0.8rem;">Booking Policy</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span id="year"></span> Trois Six Neuf Studio.</span>
+        <span>Crafted for creators in Casablanca.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Trois Six Neuf Creative Services",
+        "provider": {
+          "@type": "Organization",
+          "name": "Trois Six Neuf Studio"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Casablanca"
+        },
+        "serviceType": [
+          "Content creation support",
+          "Visual identity design",
+          "Audio post-production",
+          "Set design and styling",
+          "Production crew and rentals"
+        ]
+      }
+    </script>
+  </body>
+</html>
