@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Production Studio Casablanca | Trois Six Neuf</title>
+    <meta name="description" content="Discover Trois Six Neuf — a boutique studio offering cyclorama, podcast, and kitchen production spaces with cinematic equipment in Casablanca." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#D42027', // Deep Red
+              accent: {
+                gold: '#D1BC80',
+                white: '#FFFFFF',
+                black: '#000000',
+              },
+              neutral: {
+                warm: '#1a1a1a', // Warm grey for backgrounds
+                light: '#f5f5f5',
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .scroll-animate {
+        opacity: 0;
+        transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .scroll-animate.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+      .scroll-animate--fade-up {
+        transform: translateY(40px);
+      }
+      .scroll-animate--slide-left {
+        transform: translateX(-50px);
+      }
+      .scroll-animate--slide-right {
+        transform: translateX(50px);
+      }
+      .scroll-animate--scale-in {
+        transform: scale(0.95);
+      }
+      .hero-bg-animate {
+          animation: zoom-in 40s ease-in-out infinite;
+      }
+      @keyframes zoom-in {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.2",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
